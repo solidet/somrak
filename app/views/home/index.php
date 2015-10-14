@@ -4,7 +4,7 @@
     <title>form</title>
 </head>
 <body>
-    <form name='f',  method="POST", action="../controllers/home.php">
+    <form name='f',  method="POST", action="../home/create">
         Name : <input type='text' , name='name'>
         <input type="submit">
     </form>
@@ -14,9 +14,9 @@
 
 <?
 // echo $data['users']->name;
-foreach($data['users'] as $user)
-{
-    echo $user->name.'</br>';
-}
+// foreach($data['users'] as $user)
+// {
+//     echo $user->name.'</br>';
+// }
 
 

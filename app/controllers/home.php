@@ -26,6 +26,8 @@ class Home extends controller
     public function create($name = '')
     {
 
+        $name = $_POST['name'];
+
             $user = new User();
             $user->name = $name;
 
@@ -39,6 +41,11 @@ class Home extends controller
                 ]
             );
 
+    }
+
+    public function newUser()
+    {
+        return $this->view('home/index');
     }
 
 }
