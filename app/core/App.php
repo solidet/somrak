@@ -3,13 +3,14 @@
 class App
 {
 
-    protected $controller = 'home';
+    protected $controller = 'homeController';
     protected $method = 'index';
     protected $params = [];
 
     public function __construct()
     {
         $url = $this->parsUrl();
+        $url[0] = $url[0]."Controller";
 
         if(file_exists('../app/controllers/' . $url[0] . '.php'))
         {

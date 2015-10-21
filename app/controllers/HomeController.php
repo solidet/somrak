@@ -1,6 +1,6 @@
 <?php
 
-class Home extends controller
+class HomeController extends Controller
 {
 
     /**
@@ -26,10 +26,10 @@ class Home extends controller
     public function create($name = '')
     {
 
-        $name = $_POST['name'];
+        // $name = $_POST['name'];
 
             $user = new User();
-            $user->name = $name;
+            $user->firstname = $name;
 
             if($user->save())
 
@@ -37,7 +37,7 @@ class Home extends controller
                 'home/show',
                 [
                     'id'=>$user->id,
-                    'name'=>$user->name
+                    'name'=>$user->firstname
                 ]
             );
 

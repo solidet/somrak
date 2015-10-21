@@ -4,7 +4,7 @@
     <title>form</title>
 </head>
 <body>
-    <form name='f',  method="POST", action="../home/create">
+    <form name='f',  method="POST", action="../home/show">
         Name : <input type='text' , name='name'>
         <input type="submit">
     </form>
