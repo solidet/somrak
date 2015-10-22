@@ -11,7 +11,7 @@ class OwnerController extends Controller
         $owners = Owner::all();
 
         $this->view(
-            'owner/index',
+            'main',
             [
                 'owners'=>$owners
             ]
