@@ -1,0 +1,19 @@
+{% extends 'main.html' %}
+{% block content %}
+    <form name='f',  method="POST", action="../home/show">
+        Name : <input type='text' , name='name'>
+        <input type="submit">
+    </form>
+
+    {% for user in users %}
+      <li>
+       {{ user.firstname }}
+       {{ user.id }}
+      </li>
+    {% endfor %}
+
+{% endblock %}
+
+
+
+

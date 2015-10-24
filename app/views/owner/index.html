@@ -1,0 +1,20 @@
+
+    <table class="table">
+        <tr>
+            <th>ID</th>
+            <th>FIRST NAME</th>
+            <th>USERNAME</th>
+        </tr>
+        {% for owner in owners %}
+        <tr>
+            <td>{{ owner.id }}</td>
+            <td>{{ owner.firstname }}</td>
+            <td>{{ owner.username }}</td>
+        {% endfor %}
+        </tr>
+    </table>
+    {{ name }}
+
+
+
+

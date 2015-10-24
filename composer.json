@@ -1,7 +1,8 @@
 {
     "require": {
         "php-activerecord/php-activerecord": "^1.1",
-        "twbs/bootstrap": "^3.3"
+        "twbs/bootstrap": "^3.3",
+        "twig/twig": "^1.22"
     },
     "autolaod": {
         "classmap": [

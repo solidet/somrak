@@ -10,15 +10,15 @@ class OwnerController extends Controller
     {
         $owners = Owner::all();
 
-        $this->view(
-            'main',
+        return $this->viewTpl(
+            'owner/index.html',
             [
                 'owners'=>$owners
             ]
         );
     }
 
-    /**
+    /**1
     * function create owner
     */
     public function create()
@@ -50,8 +50,8 @@ class OwnerController extends Controller
 
             if($owner->save()){
 
-            return $this->view(
-                'owner/show',
+            return $this->viewTpl(
+                'owner/show.html',
                 [
                     'owner'=>$owner
                 ]
@@ -60,9 +60,9 @@ class OwnerController extends Controller
 
     }
 
-    public function newUser()
+    public function newOwner()
     {
-        return $this->view('owner/create');
+        return $this->viewTpl('owner/create.html',[]);
     }
 
 }

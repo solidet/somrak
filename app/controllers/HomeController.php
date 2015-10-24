@@ -9,15 +9,22 @@ class HomeController extends Controller
     public function index()
     {
         $users = User::all();
+        $name = 'det';
 
-        $this->view(
-            'home/index',
+        // $this->view(
+        //     'home/index',
+        //     [
+        //         // 'id'=>$users->id,
+        //         // 'name'=>$users->name
+        //         'users'=>$users
+        //     ]
+        // );
+        return $this->viewTpl('home/index.html',
             [
-                // 'id'=>$users->id,
-                // 'name'=>$users->name
-                'users'=>$users
-            ]
-        );
+                'users'=> $users,
+
+            ]);
+
     }
 
     /**
@@ -33,8 +40,8 @@ class HomeController extends Controller
 
             if($user->save())
 
-            return $this->view(
-                'home/show',
+            return $this->viewTpl(
+                'home/show.html',
                 [
                     'id'=>$user->id,
                     'name'=>$user->firstname
@@ -45,7 +52,7 @@ class HomeController extends Controller
 
     public function newUser()
     {
-        return $this->view('home/index');
+        return $this->viewTpl('home/index.html',[]);
     }
 
 }
