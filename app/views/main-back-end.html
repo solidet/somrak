@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin</title>
+    {% block stylesheet %}
+
+    {% endblock %}
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="../../vendor/twbs/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../public/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="nav-left">
+                    my left
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="main-content">
+                {% block content %}
+
+                {% endblock %}
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
