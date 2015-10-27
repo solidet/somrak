@@ -3,7 +3,7 @@
 class App
 {
 
-    protected $controller = 'HomeController';
+    protected $controller = 'homeController';
     protected $method = 'index';
     protected $params = [];
 
@@ -17,7 +17,7 @@ class App
             $this->controller = $url[0];
             unset($url[0]);
         }
-        // print_r($url);
+        // var_dump($this->controller);die;
 
         require_once '../app/controllers/' . $this->controller . '.php';
 
