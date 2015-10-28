@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>form</title>
-</head>
-<body>
+{% extends 'main-back-end.html' %}
+{% block content %}
     <form name='f',  method="POST", action="../owner/create">
         UserName : <input type='text' , name='username'> </br>
         firstname : <input type='text' , name='firstname'> </br>
@@ -21,6 +17,4 @@
             <input type="radio" name="activated" value=1 checked> </br>
         <input type="submit">
     </form>
-
-</body>
-</html>
+{% endblock %}

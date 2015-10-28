@@ -17,14 +17,17 @@ body {
   border-bottom: 1px solid #eee;
 }
 
-/*
- * Top navigation
- * Hide default border to remove 1px line.
- */
-.navbar-fixed-top {
-  border: 0;
+.navbar-default {
+  background-color: #F5F5F5;
 }
 
+.navbar-default .navbar-nav > li > a {
+    color: #333;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #337AB7;
+}
 /*
  * Sidebar
  */
