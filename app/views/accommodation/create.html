@@ -1,0 +1,20 @@
+{% extends 'main-back-end.html' %}
+    {% block content %}
+        <h1 class="page-header">Accommodation Creation</h1>
+        <form>
+            <div class="col-md-6">
+                Accommodation Name :
+                <input type="text" name="accommodationName" class="form-control" required />
+            </div>
+            <div class="col-md-6">
+                Accommodation Type :
+                <select class="form-control">
+                    <option value=1>Hotel</option>
+                    <option value=2 >Guesthouse</option>
+                </select>
+            </div>
+        </form>
+
+
+
+    {% endblock %}
