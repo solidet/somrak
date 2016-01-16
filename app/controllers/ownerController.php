@@ -62,7 +62,7 @@ class OwnerController extends Controller
 
     public function newOwner()
     {
-        return $this->viewTpl('owner/create.html',[]);
+        return $this->viewTpl('owner/new.html',[]);
     }
 
 }
