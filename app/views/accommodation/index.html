@@ -1,0 +1,9 @@
+{% extends 'main-back-end.html' %}
+{% block contentbackend %}
+	{% for accommodation in accommodations %}
+		<li>
+		{{accommodation.accommodationid}}
+		{{accommodation.accommodation}}
+		</li>
+	{% endfor %}
+{% endblock %}
